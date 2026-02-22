@@ -1,0 +1,248 @@
+.Footer{ 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 175px 206px 20px 206px;
+    background-color: var(--color-footer);
+    margin-top:155px ;
+    
+ }
+ .Footer__Header{ 
+     font-family: var(--font-family);
+     font-weight: 800;
+     font-size: 45px;
+     line-height: 75px;
+     letter-spacing: -4%;
+     text-align: center;
+     background:var(--gradient-text);
+     background-clip: text;
+     color: transparent;
+     margin-bottom:60px ;
+
+
+ }
+ .Footer__Button button{ 
+     background-color: transparent;
+     outline: none;
+     border: none;
+     color: #fff;
+     border: 1px solid #fff;
+     width: 216px;
+     height: 65px;
+     font-family: var(--font-family);
+     margin-bottom:245px ;
+     transition: 0.5s;
+
+ }
+  .Footer__Button button:hover{ 
+     cursor: pointer;
+     background-color:#FF4820 ;
+     transition: 0.5s;
+     
+  }
+
+ .Footer__Links{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-family);
+    color: #fff;
+    
+     
+ }
+ .Footer__Links__LogoSide{ 
+    padding-right: 3rem;
+ }
+ .Footer__Links__LogoSide img{ 
+    width: 118px;
+    height: 30px;
+     
+ }
+  .Footer__Links__LogoSide > p{
+     max-width: 168px;
+     
+     
+  }
+
+
+ .Footer__Links__LinksSide{ 
+    display: flex;
+    justify-content: space-between ;
+    gap:11.75rem ;
+
+ }
+  .Footer__Links__LinksSide p { 
+     max-width: 116px;
+  }
+  
+  .Column h3{
+    margin-bottom:30px ;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Gilroy-Bold;
+  }
+  .Column p{ 
+     font-size: 12px;
+     font-weight: 400;
+     font-family:Gilroy-Medium ;
+     line-height: 30px;
+     margin-bottom: 1rem;
+
+  }
+ .Column p a{
+     text-decoration: none;
+ }
+  .Footer__License p{ 
+     color: #fff;
+     font-family: Gilroy-Medium;
+     font-weight: 400;
+     font-size: 12px;
+     margin-top: 3rem;
+
+  }
+ 
+@media screen and (max-width: 1100px) {
+    .Footer {
+        padding: 4rem 6rem; 
+    }
+
+    .Footer__Header {
+        font-size: 34px;
+        line-height: 50px;
+    }
+
+    .Footer__Button button {
+        margin-bottom: 120px;
+    }
+
+    .Footer__Links {
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+
+    .Footer__Links__LinksSide {
+        gap: 8rem; 
+    }
+    
+}
+@media screen and (max-width: 950px) {
+    .Footer {
+        padding: 4rem 6rem; 
+    }
+
+    .Footer__Header {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .Footer__Button button {
+        margin-bottom: 100px;
+        width: 200px;
+        height: 60px;
+
+    }
+  
+    .Footer__Links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .Footer__Links__LogoSide{ 
+         text-align: center;
+    }
+    .Footer__Links__LogoSide img{ 
+          width: 100px;
+          height: 25px;
+          
+    }
+    .Footer__Links__LogoSide p{ 
+         font-size: 14px;
+         margin-top: 0.5rem;
+    }
+
+    .Footer__Links__LinksSide {
+        gap: 8rem; 
+    }
+    
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .Footer__Links {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 3rem;
+    }
+
+    .Footer__Links__LogoSide, 
+    .Footer__Links__LinksSide {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Footer__Links__LogoSide {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .Footer__Links__LinksSide {
+        justify-content: space-around;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .Footer {
+        padding: 4rem 1rem 0 1rem;
+    }
+
+    .Footer__Header {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 40px;
+    }
+
+    .Footer__Button button {
+        width: 150px; 
+        height: 40px;
+        font-size: 12px;
+        margin-bottom: 50px; 
+    }
+     .Footer__Links{ 
+        width: 100%;
+        
+     }
+    .Footer__Links__LinksSide {
+
+        flex-direction: column;
+        align-items: center; 
+        
+        gap: 1.5rem;
+    }
+    .Footer__Links__LogoSide{ 
+        padding-right: 0;
+    }
+
+    .Column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        width: 100%;
+    }
+    
+    .Column h3 {
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+    .Column p{ 
+        max-width: 100%;
+        line-height: 10px;
+    }
+}

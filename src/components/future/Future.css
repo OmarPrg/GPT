@@ -1,0 +1,209 @@
+.Future{ 
+    padding: 0 135px ;
+    margin:0 50px ;
+    margin: 40px;
+    margin: auto;
+    padding-top: 160px;   
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 1% 31%, rgba(7, 36, 65, 1) 0%, rgba(4, 12, 24, 1) 23%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 1% 31%, rgba(7, 36, 65, 1) 0%, rgba(4, 12, 24, 1) 23%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 1% 31%, rgba(7, 36, 65, 1) 0%, rgba(4, 12, 24, 1) 23%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 1% 31%, rgba(7, 36, 65, 1) 0%, rgba(4, 12, 24, 1) 23%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 1% 31%, rgba(7, 36, 65, 1) 0%, rgba(4, 12, 24, 1) 23%);  
+}
+.Future__TopPart{ 
+     display: flex;
+     justify-content: space-between;
+     gap: 4rem;
+
+
+
+}
+ .Future__TopPart__LeftSide{ 
+    max-width: 426px;
+ }
+
+.Future__TopPart__LeftSide h2 , .Future__BottomPart__Content h2{ 
+    background: var(--gradient-text);
+    background-clip: text;
+    font-size: 34px;
+    color: transparent;   
+}
+
+.Future__TopPart__LeftSide p , .Future__BottomPart__Content p{ 
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 30px;
+     color:#FF8A71 ;
+     margin-top: 3rem;
+     font-family: var(--font-family);
+
+}
+.Future__TopPart__RightSide{ 
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+     max-width: 590px;
+}
+.Future__TopPart__RightSide .Card{ 
+       gap: 4rem;
+       margin-bottom: 0.5rem;
+       flex-direction: row;
+}
+.Future__TopPart__RightSide .title{ 
+     font-size: 18px;
+     width: 182px;
+}
+.Future__TopPart__RightSide p{ 
+     min-width: 334px;
+     font-size: 14px;
+     padding: 0;
+}
+
+.Future__BottomPart{ 
+     display: flex;
+}
+.Future__BottomPart__Image img{ 
+  width: 546px;
+  height: 607px;
+}
+.Future__BottomPart__Content{ 
+     display: flex;
+     width: 479px;
+     flex-direction: column;
+     justify-content: end;
+     padding-bottom: 40px;
+}
+.Future__BottomPart__Content h4{  
+    color: #71E5FF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: var(--font-family);
+    margin-bottom: 10px;
+ }
+.Future__BottomPart__Content h2{ 
+    margin-bottom: 20px;
+
+}
+.Future__BottomPart__Content h5{
+    color: #81AFDD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+
+ }
+
+ 
+@media screen and (max-width: 1100px) {
+    .Future {
+        padding: 4rem; 
+        margin: 0;
+    }
+
+    .Future__BottomPart__Image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Future__BottomPart__Content {
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .Future {
+        padding: 2rem;
+    }
+
+    .Future__BottomPart {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .Future__BottomPart__Content {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+    
+  .Future__BottomPart__Content h5{ 
+     max-width: 80%;
+  }
+
+    .Future__TopPart {
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .Future__TopPart {
+        flex-direction: column; 
+    }
+
+    .Future__TopPart__LeftSide {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .Future__TopPart__RightSide {
+        max-width: 100%;
+    }
+
+    .Future__BottomPart__Content h2 {
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .Future {
+        padding:40px;
+        margin-top: 40px;
+    }
+
+       .Future__TopPart__RightSide .Card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .Future__TopPart__RightSide .title {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .Future__TopPart__RightSide p {
+        min-width: 100%; 
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .Future__TopPart__LeftSide h2, 
+    .Future__BottomPart__Content h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .Future__BottomPart__Content h5 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .Future__BottomPart__Content p{ 
+         font-size: 12px;
+         margin-top: 1rem;
+    }
+
+}
